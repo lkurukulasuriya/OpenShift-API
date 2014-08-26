@@ -7,7 +7,7 @@ app.use(bodyParser())
 
 var params=""
 
-var db = mongoskin.db('mongodb://@localhost:27017/test', {safe:true})
+var db = mongoskin.db('mongodb://nigga:nigga@ds045089.mongolab.com:45089/etsp_v1', {safe:true})
 
 app.param('collectionName', function(req, res, next, collectionName){
   req.collection = db.collection(collectionName)
